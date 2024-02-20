@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari Birthday Greeting</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #000, #8b0000);
+            color: #fff;
+            text-align: center;
+            margin: 0;
+        }
+
+        #card {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(45deg, #333, #8b0000);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        #header {
+            background: linear-gradient(45deg, #6e0808, #4794ff);
+            color: #fff;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        #content {
+            padding: 20px;
+            text-align: left;
+        }
+
+        #footer {
+            background: linear-gradient(45deg, #9e160f, #4775ff);
+            color: #fff;
+            padding: 10px;
+            border-radius: 0 0 8px 8px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        h1, p {
+            margin: 0;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwYwIV_TijjBhnp0jdy4imGQsSazsjcb9AOA&usqp=CAU') center/cover no-repeat;
+            opacity: 0.1;
+            z-index: -1;
+        }
+        #driveNowButton {
+            background: linear-gradient(45deg, #dc1c13, #221d1d);
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        #driveNowButton:hover {
+            background: linear-gradient(45deg, #221d1d, #dc1c13);
+        }
+    </style>
+</head>
+<body>
+    <div id="card">
+        <div id="header">
+            <h1>Happy Birthday!</h1>
+        </div>
+        <div id="content">
+            <p>Dear Yash,</p>
+            <p>Wishing you a fantastic birthday filled with joy, laughter, and unforgettable moments! May your year ahead be as thrilling as a ride in a Lambo!</p>
+            <img src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/news/2023/02_06_one_off_invencible/autentica/autentica_cover_m.jpg" alt="lambo Image">
+        </div>
+        <div id="footer">
+            <p>Best Wishes,<br></p>
+            <br>
+            <a href="https://www.lamborghini.com/" target="_blank" id="driveNowButton">Drive Now</a>
+        </div>
+    </div>
+</body>
+</html>
